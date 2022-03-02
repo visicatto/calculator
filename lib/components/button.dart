@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
@@ -39,17 +41,17 @@ class Button extends StatelessWidget {
       flex: big ? 2 : 1,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: this.color,
+          primary: color,
         ),
         child: Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 32,
             fontWeight: FontWeight.w200,
           ),
         ),
-        onPressed: () {},
+        onPressed: () => cb(text),
       ),
     );
   }

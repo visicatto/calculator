@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class Display extends StatelessWidget {
-  const Display({Key? key, required this.text}) : super(key: key);
+  const Display(String value, {Key? key, required this.text}) : super(key: key);
 
   final String text;
 
