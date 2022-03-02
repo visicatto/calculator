@@ -20,7 +20,8 @@ class Keybord extends StatelessWidget {
           ButtonRow(
             const [],
             buttons: [
-              Button.big(text: 'AC', cb: cb, color: Button.DARK),
+              Button(text: 'AC', cb: cb, color: Button.DARK),
+              Button(text: 'DEL', cb: cb, color: Button.DARK),
               Button.operation(text: '%', cb: cb, color: Button.DARK),
               Button.operation(text: '/', cb: cb),
             ],
@@ -32,7 +33,7 @@ class Keybord extends StatelessWidget {
               Button(text: '7', cb: cb),
               Button(text: '8', cb: cb),
               Button(text: '9', cb: cb),
-              Button.operation(text: 'X', cb: cb),
+              Button.operation(text: '*', cb: cb),
             ],
           ),
           const SizedBox(height: 1),
